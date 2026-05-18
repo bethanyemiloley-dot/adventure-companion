@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@theme {
+  /* Ethereal Companion · 来源: stitch_gentle_daily_companion/ethereal_companion/DESIGN.md */
+  --color-surface: #fcf9f5;
+  --color-surface-container: #f0ede9;
+  --color-on-surface: #1c1c1a;
+  --color-on-surface-variant: #3e4a3d;
+  --color-outline: #6e7a6c;
+
+  --color-primary: #006e2b;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #47c163;
+  --color-earth-moss: #235524;
+
+  --color-serene-sky: #e8f1ff;
+  --color-warm-sand: #f5f1ea;
+  --color-soft-clay: #d9c5b2;
+  --color-gentle-blush: #f2e5e5;
+
+  --font-display: "Quicksand", system-ui, sans-serif;
+  --font-body: "Nunito Sans", system-ui, sans-serif;
+  --font-quote: "Bricolage Grotesque", serif;
+
+  --radius-card: 1rem;
+}
+
+@keyframes record-out {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+}
+
+.animate-record-out {
+  animation: record-out 0.7s ease-in-out;
+}
+
+@keyframes zoom-out-down {
+  40% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  100% {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
+    transform-origin: center bottom;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+.animate-zoom-out-down {
+  animation: zoom-out-down 0.9s both;
+}
+
+/* react-day-picker · Ethereal palette */
+.rdp-ethereal {
+  --rdp-accent-color: var(--color-primary);
+  --rdp-accent-background-color: var(--color-primary-container);
+  --rdp-background-color: transparent;
+  --rdp-today-color: var(--color-primary);
+  --rdp-day-font: var(--font-body);
+  --rdp-day_button-height: 2rem;
+  --rdp-day_button-width: 2rem;
+  --rdp-day_button-border-radius: 9999px;
+  --rdp-weekday-text-transform: none;
+  --rdp-weekday-font: var(--font-body);
+  --rdp-disabled-opacity: 0.3;
+  --rdp-outside-opacity: 0.3;
+  --rdp-nav_button-height: 1.75rem;
+  --rdp-nav_button-width: 1.75rem;
+  --rdp-month_caption-font: var(--font-display);
+  font-size: 0.85rem;
+  color: var(--color-on-surface);
+}
+
+.rdp-ethereal .rdp-month_caption {
+  font-weight: 600;
+}
+
+.rdp-ethereal .rdp-day_button:hover:not([disabled]) {
+  background-color: var(--color-surface-container);
+}
+
+.rdp-ethereal .rdp-selected .rdp-day_button {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.rdp-ethereal .rdp-today:not(.rdp-selected) .rdp-day_button {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.rdp-ethereal .rdp-range_middle .rdp-day_button {
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container, #004a1b);
+  border-radius: 0;
+}
+
+.rdp-ethereal .rdp-range_start .rdp-day_button,
+.rdp-ethereal .rdp-range_end .rdp-day_button {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.rdp-ethereal .rdp-range_start:not(.rdp-range_end) .rdp-day_button {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.rdp-ethereal .rdp-range_end:not(.rdp-range_start) .rdp-day_button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}

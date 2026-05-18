@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Companion Center</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400&amp;family=Nunito+Sans:wght@400;700&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#e8c339",
+                    "secondary": "#2a58c0",
+                    "on-tertiary": "#ffffff",
+                    "background": "#fcf9f5",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#fcf9f5",
+                    "on-surface": "#1c1c1a",
+                    "on-primary-container": "#004a1b",
+                    "secondary-fixed-dim": "#b3c5ff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#f0ede9",
+                    "serene-sky": "#E8F1FF",
+                    "on-tertiary-fixed": "#231b00",
+                    "error-container": "#ffdad6",
+                    "primary": "#006e2b",
+                    "on-primary": "#ffffff",
+                    "inverse-surface": "#31302e",
+                    "on-error-container": "#93000a",
+                    "on-secondary-container": "#002b76",
+                    "on-primary-fixed": "#002108",
+                    "gentle-blush": "#F2E5E5",
+                    "on-secondary-fixed-variant": "#003fa5",
+                    "tertiary-fixed": "#ffe07d",
+                    "soft-clay": "#D9C5B2",
+                    "error": "#ba1a1a",
+                    "surface-container-low": "#f6f3ef",
+                    "surface-dim": "#dcdad6",
+                    "surface-tint": "#006e2b",
+                    "surface-container-highest": "#e5e2de",
+                    "on-tertiary-container": "#4c3d00",
+                    "on-tertiary-fixed-variant": "#564500",
+                    "on-secondary-fixed": "#001849",
+                    "on-error": "#ffffff",
+                    "on-surface-variant": "#3e4a3d",
+                    "earth-moss": "#235524",
+                    "surface-container-high": "#eae8e4",
+                    "tertiary": "#725c00",
+                    "secondary-container": "#6c94ff",
+                    "warm-sand": "#F5F1EA",
+                    "inverse-on-surface": "#f3f0ec",
+                    "on-background": "#1c1c1a",
+                    "inverse-primary": "#66de7c",
+                    "primary-fixed-dim": "#66de7c",
+                    "tertiary-container": "#caa719",
+                    "on-primary-fixed-variant": "#00531f",
+                    "surface": "#fcf9f5",
+                    "primary-container": "#47c163",
+                    "secondary-fixed": "#dbe1ff",
+                    "primary-fixed": "#82fc96",
+                    "surface-variant": "#e5e2de",
+                    "outline": "#6e7a6c",
+                    "outline-variant": "#bdcaba"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "safe-area": "32px",
+                    "margin-mobile": "24px",
+                    "gutter": "16px",
+                    "unit": "8px"
+            },
+            "fontFamily": {
+                    "display-lg": [
+                            "Quicksand"
+                    ],
+                    "body-lg": [
+                            "Nunito Sans"
+                    ],
+                    "body-md": [
+                            "Nunito Sans"
+                    ],
+                    "label-caps": [
+                            "Nunito Sans"
+                    ],
+                    "quote-expressive": [
+                            "Bricolage Grotesque"
+                    ],
+                    "headline-md": [
+                            "Quicksand"
+                    ]
+            },
+            "fontSize": {
+                    "display-lg": [
+                            "40px",
+                            {
+                                    "lineHeight": "48px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "display-lg-mobile": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-caps": [
+                            "12px",
+                            {
+                                    "lineHeight": "16px",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "quote-expressive": [
+                            "22px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-md": [
+                            "28px",
+                            {
+                                    "lineHeight": "36px",
+                                    "fontWeight": "600"
+                            }
+                    ]
+            }
+        }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-warm-sand text-on-surface min-h-screen relative overflow-x-hidden font-body-md antialiased">
+<!-- Atmospheric Background Layer -->
+<div class="fixed inset-0 z-0 pointer-events-none opacity-40 bg-bottom bg-no-repeat bg-contain" data-alt="A highly stylized, very faint background depicting soft, overlapping watercolor mountain silhouettes fading into a warm, creamy sand-colored sky. The mountains are rendered in pale, muted tones of gentle blush and soft clay, creating a serene, atmospheric depth of field. There are no harsh lines, high contrast areas, or rigid geometric shapes, ensuring a calm, organic minimalist aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAgApUtNtrEzpAcmZifpIywbYK0Axt57sAoqrSZqfTFcnCRcz0rY1qY_83oB2u_EV_mHRd21RHSqkJ1IAbLmnNE9gR48IhGHq-OVqO0wNLxLTAYMyH7COKFgL533Wmhr53JRdbtaNtd4VNyDM5kQwQys3doeDXSCeBNYLTjaN9cmyfCOUBTYfrM3qPMswlkZMwEJp8exucMp6tszThkEJmaiiz2-8nIkuAmtDsEe3jm49K46mewNZiHuCemkXw4gpIlY87Kch1S6f4'); filter: blur(2px);"></div>
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full flex justify-between items-center px-margin-mobile pt-safe pb-4 bg-warm-sand/80 backdrop-blur-md z-40">
+<div class="w-12 h-12 rounded-full overflow-hidden shrink-0 bg-surface-container flex items-center justify-center">
+<img alt="Avatar" class="w-full h-full object-cover mix-blend-multiply opacity-70" data-alt="A delicate, soft charcoal sketch of a sleeping fox curled up into a small ball, rendered on slightly textured paper. The drawing is minimalistic, using only light, hand-drawn strokes without any heavy shading or harsh outlines. The overall mood is exceedingly calm, conveying a sense of gentle stewardship and restfulness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHUVUdk9nl43p54A1ZTjZzBGXIHNW0VxXOVQoe1Odj30mYQbYHCvKe3ZMAoCaSnPssPVyr3LfSzDJKG6okSYpdQeRg4ZcZdbHdTCyCrst7fjGUqOwf0y06GQ0arBbfW1s2LteXoI6hXlkbqvb1TsWxOgv1USjBnSlJk_PTsdA6UqsRC9PBuSYBWYfcY2LVS0_mZMcHDYEaWQGkJbtlJpNSRhxNdiuGTSVqTLrdk6UL_sMsY7PPxFOsdzAsmfZRmN4-t3yYR9OhU5k"/>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile text-primary tracking-tight truncate mx-4 flex-1 text-center" id="header-greeting">晚安，漫游者</h1>
+<button class="w-12 h-12 flex items-center justify-center shrink-0 hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined text-primary text-2xl">eco</span>
+</button>
+</header>
+<!-- Main Canvas -->
+<main class="pt-[140px] pb-[160px] px-margin-mobile flex flex-col items-center relative z-10 min-h-screen">
+<!-- Central Companion Illustration -->
+<div class="w-full max-w-[320px] aspect-square mt-8 mb-16 relative flex items-center justify-center">
+<img alt="Companion Fox" class="w-full h-full object-cover rounded-[32px] shadow-2xl opacity-90" data-alt="A central, hand-drawn illustration of a peaceful fox. The artwork embodies a hybrid of organic minimalism and artistic whimsy." id="companion-fox" src="https://lh3.googleusercontent.com/aida/ADBb0uj5zTS27Wm_-usRkVL4YXSFzXau0kqXun_Tbhq8gxiuuuJQbsO1VJ9gQAy8QhkgjzJSBmt_PgDCuezefVj4tahxDgBmCTXhMgp1WcPQTr50qnKNdsGR1Mo4vK9jphswumUk9YL2iKkUP3qvOsDJfzR3pdmUG-JIF7QWBexdeGei2M8Gj2LF9wGPHCOPWtsvK-vb2uTo5i1QLrFAoMlGcPVJau7ktOC2Bx0IEJ4qrzdQTyY8Oh9as1p1Cm8"/>
+</div>
+<!-- Expressive Greeting -->
+<h2 class="font-quote-expressive text-quote-expressive text-on-surface-variant text-center mb-16 max-w-sm tracking-wide leading-relaxed" id="main-greeting">夜深了，让漫天星光伴你入眠🌙</h2>
+<!-- Current Focus Card (Bento Style/Glassmorphism hybrid) -->
+<div class="w-full max-w-sm bg-surface-container-lowest/80 backdrop-blur-sm rounded-[32px] p-8 shadow-[0_30px_60px_-15px_rgba(0,110,43,0.08)] relative z-10 mb-8 border border-white/50">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-8 h-8 rounded-full bg-gentle-blush flex items-center justify-center">
+<span class="material-symbols-outlined text-outline" style="font-variation-settings: 'FILL' 1; font-size: 16px;">spa</span>
+</div>
+<span class="font-label-caps text-label-caps text-outline tracking-widest uppercase">当前状态</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface">在静谧的夜色里，听星光的低语，享受属于自己的宁静梦境。</p>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] max-w-md rounded-[32px] bg-surface-container-low/90 backdrop-blur-xl shadow-2xl shadow-primary/10 flex justify-around items-center px-2 py-3 z-50 border border-white/20">
+<!-- Active: Home -->
+<button class="flex flex-col items-center justify-center text-on-surface w-16 group">
+<div class="bg-primary-container text-on-primary-container px-4 py-1 rounded-full mb-1 transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+</div>
+<span class="text-[11px] font-bold text-on-surface">首页</span>
+</button>
+<!-- Inactive -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant w-16 group hover:text-on-surface">
+<div class="px-4 py-1 rounded-full mb-1 group-hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">book</span>
+</div>
+<span class="text-[11px] font-bold">记录</span>
+</button>
+<!-- Inactive -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant w-16 group hover:text-on-surface">
+<div class="px-4 py-1 rounded-full mb-1 group-hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">photo_library</span>
+</div>
+<span class="text-[11px] font-bold">剪影</span>
+</button>
+<!-- Inactive -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant w-16 group hover:text-on-surface">
+<div class="px-4 py-1 rounded-full mb-1 group-hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">history</span>
+</div>
+<span class="text-[11px] font-bold">回顾</span>
+</button>
+</nav>
+</body></html>

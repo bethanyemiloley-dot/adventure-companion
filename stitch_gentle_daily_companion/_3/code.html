@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>温柔回响 - Ethereal Companion</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400&amp;family=Nunito+Sans:wght@400;700&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-secondary-fixed": "#001849",
+                "on-primary": "#ffffff",
+                "primary-fixed": "#82fc96",
+                "surface-container-lowest": "#ffffff",
+                "surface-container-highest": "#e5e2de",
+                "tertiary-container": "#caa719",
+                "on-tertiary-fixed-variant": "#564500",
+                "surface-tint": "#006e2b",
+                "on-primary-fixed-variant": "#00531f",
+                "gentle-blush": "#F2E5E5",
+                "on-secondary": "#ffffff",
+                "primary-container": "#47c163",
+                "secondary-fixed": "#dbe1ff",
+                "error-container": "#ffdad6",
+                "secondary-fixed-dim": "#b3c5ff",
+                "on-background": "#1c1c1a",
+                "secondary": "#2a58c0",
+                "on-error-container": "#93000a",
+                "serene-sky": "#E8F1FF",
+                "tertiary-fixed": "#ffe07d",
+                "primary": "#006e2b",
+                "warm-sand": "#F5F1EA",
+                "tertiary": "#725c00",
+                "surface-container-low": "#f6f3ef",
+                "surface-container-high": "#eae8e4",
+                "inverse-on-surface": "#f3f0ec",
+                "surface-container": "#f0ede9",
+                "earth-moss": "#235524",
+                "surface-variant": "#e5e2de",
+                "outline": "#6e7a6c",
+                "on-surface-variant": "#3e4a3d",
+                "tertiary-fixed-dim": "#e8c339",
+                "surface": "#fcf9f5",
+                "inverse-primary": "#66de7c",
+                "on-surface": "#1c1c1a",
+                "primary-fixed-dim": "#66de7c",
+                "on-tertiary-container": "#4c3d00",
+                "error": "#ba1a1a",
+                "background": "#fcf9f5",
+                "surface-dim": "#dcdad6",
+                "on-secondary-container": "#002b76",
+                "inverse-surface": "#31302e",
+                "on-error": "#ffffff",
+                "on-tertiary": "#ffffff",
+                "on-secondary-fixed-variant": "#003fa5",
+                "surface-bright": "#fcf9f5",
+                "secondary-container": "#6c94ff",
+                "on-primary-container": "#004a1b",
+                "outline-variant": "#bdcaba",
+                "on-primary-fixed": "#002108",
+                "soft-clay": "#D9C5B2",
+                "on-tertiary-fixed": "#231b00"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "margin-mobile": "24px",
+                "gutter": "16px",
+                "unit": "8px",
+                "safe-area": "32px"
+        },
+        "fontFamily": {
+                "quote-expressive": [
+                        "Bricolage Grotesque"
+                ],
+                "body-md": [
+                        "Nunito Sans"
+                ],
+                "display-lg": [
+                        "Quicksand"
+                ],
+                "body-lg": [
+                        "Nunito Sans"
+                ],
+                "label-caps": [
+                        "Nunito Sans"
+                ],
+                "headline-md": [
+                        "Quicksand"
+                ]
+        },
+        "fontSize": {
+                "quote-expressive": [
+                        "22px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "display-lg": [
+                        "40px",
+                        {
+                                "lineHeight": "48px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-caps": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-md": [
+                        "28px",
+                        {
+                                "lineHeight": "36px",
+                                "fontWeight": "600"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-warm-sand text-on-surface min-h-screen relative overflow-x-hidden font-body-md antialiased selection:bg-primary/20 selection:text-primary">
+<!-- Atmospheric Background Layer -->
+<div class="fixed inset-0 z-0 pointer-events-none opacity-40 bg-bottom bg-no-repeat bg-contain" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAgApUtNtrEzpAcmZifpIywbYK0Axt57sAoqrSZqfTFcnCRcz0rY1qY_83oB2u_EV_mHRd21RHSqkJ1IAbLmnNE9gR48IhGHq-OVqO0wNLxLTAYMyH7COKFgL533Wmhr53JRdbtaNtd4VNyDM5kQwQys3doeDXSCeBNYLTjaN9cmyfCOUBTYfrM3qPMswlkZMwEJp8exucMp6tszThkEJmaiiz2-8nIkuAmtDsEe3jm49K46mewNZiHuCemkXw4gpIlY87Kch1S6f4'); filter: blur(2px);"></div>
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full flex justify-between items-center px-margin-mobile pt-safe-area pb-4 bg-warm-sand/80 backdrop-blur-md z-40">
+<!-- Leading Avatar -->
+<div class="w-12 h-12 rounded-full overflow-hidden shrink-0 bg-surface-container flex items-center justify-center">
+<img alt="Avatar" class="w-full h-full object-cover mix-blend-multiply opacity-70" data-alt="A delicate, soft charcoal sketch of a sleeping fox curled up into a small ball, rendered on slightly textured paper." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHUVUdk9nl43p54A1ZTjZzBGXIHNW0VxXOVQoe1Odj30mYQbYHCvKe3ZMAoCaSnPssPVyr3LfSzDJKG6okSYpdQeRg4ZcZdbHdTCyCrst7fjGUqOwf0y06GQ0arBbfW1s2LteXoI6hXlkbqvb1TsWxOgv1USjBnSlJk_PTsdA6UqsRC9PBuSYBWYfcY2LVS0_mZMcHDYEaWQGkJbtlJpNSRhxNdiuGTSVqTLrdk6UL_sMsY7PPxFOsdzAsmfZRmN4-t3yYR9OhU5k"/>
+</div>
+<!-- Headline -->
+<h1 class="font-display-lg text-[32px] leading-[40px] text-primary tracking-tight truncate mx-4 flex-1 text-center">温柔回响</h1>
+<!-- Trailing Icon -->
+<button class="w-12 h-12 flex items-center justify-center shrink-0 hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined text-primary text-2xl">eco</span>
+</button>
+</header>
+<!-- Main Canvas: Echoes / Retrospective -->
+<main class="pt-[100px] pb-[160px] px-margin-mobile relative z-10 min-h-screen">
+<!-- Summary Section (No Pressure) -->
+<section class="mb-10 text-center relative">
+<h2 class="font-quote-expressive text-quote-expressive text-on-surface-variant leading-relaxed inline-block relative">
+                今天你有 <span class="text-primary font-display-lg text-[32px] inline-block mx-1">5</span> 个发光时刻
+                <svg class="absolute -bottom-2 left-0 w-full h-3 text-primary/30" preserveaspectratio="none" viewbox="0 0 100 10">
+<path d="M0 5 Q 25 10 50 5 T 100 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</h2>
+<p class="font-body-md text-body-md text-outline mt-4">嘿，来看看你今天收集的光芒吧。</p>
+</section>
+<!-- Masonry Grid of Moment Cards -->
+<section class="columns-2 gap-gutter space-y-gutter">
+<!-- Card 1 -->
+<div class="break-inside-avoid rounded-[24px] bg-surface-container-lowest/80 backdrop-blur-sm border border-white/50 shadow-[0_10px_30px_-10px_rgba(0,110,43,0.05)] p-6 relative overflow-hidden transition-transform hover:scale-[1.02]">
+<div class="absolute top-0 right-0 p-3 opacity-10">
+<span class="material-symbols-outlined text-4xl text-primary">menu_book</span>
+</div>
+<div class="relative z-10">
+<span class="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full font-label-caps text-label-caps mb-4">晨间静谧</span>
+<p class="font-headline-md text-headline-md text-on-surface tracking-tight leading-snug">竟然看完了三页书</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 opacity-80">故事终于开始有点意思了。</p>
+</div>
+</div>
+<!-- Card 2 (Image Card) -->
+<div class="break-inside-avoid rounded-[24px] bg-surface-container-lowest/80 backdrop-blur-sm border border-white/50 shadow-[0_10px_30px_-10px_rgba(0,110,43,0.05)] overflow-hidden group">
+<div class="h-40 w-full relative">
+<img alt="Moment" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A soft, hazy photograph of a ceramic coffee cup sitting on a light wooden table next to an open notebook." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANigW-QA0C5OAGaQYlK9XeNZEd0pFJT-mFxhX15yWKS8g0E82uH-yl48jpyJna-Gn_LhozwDVzRTLWKXqTr1g_i6BVPmtB8LyH9Hb2teRc9sfNyThVM1EfNa2YtJIGxjwirbDdTwwbIftzuQrga3in22pCtv9CF0qD4piCHmledN0fqF2E8ozaB8KEiNZA_dWuYNAyQZjqKARZDPHynY_pQaJoEuYrgiJH-FrtRviu1mkXQ2dPvqNM-FiTew2oVZIvSe_pafS_h0c"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-surface-container-lowest/20 to-transparent"></div>
+</div>
+<div class="p-6 pt-2 relative z-10">
+<p class="font-headline-md text-headline-md text-on-surface tracking-tight">发呆伴着咖啡香</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="break-inside-avoid rounded-[24px] bg-surface-container-lowest/80 backdrop-blur-sm border border-white/50 shadow-[0_10px_30px_-10px_rgba(0,110,43,0.05)] p-6 relative">
+<span class="inline-block px-3 py-1 bg-secondary/10 text-secondary rounded-full font-label-caps text-label-caps mb-4">暂停键</span>
+<p class="font-headline-md text-headline-md text-on-surface tracking-tight leading-snug">灵魂出窍了十分钟</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 opacity-80">看窗外的云朵玩捉迷藏。</p>
+</div>
+<!-- Card 4 -->
+<div class="break-inside-avoid rounded-[24px] bg-surface-container-lowest/80 backdrop-blur-sm border border-white/50 shadow-[0_10px_30px_-10px_rgba(0,110,43,0.05)] p-6 flex flex-col justify-center min-h-[140px]">
+<div class="flex items-center space-x-3 mb-2">
+<span class="material-symbols-outlined text-tertiary">music_note</span>
+<p class="font-label-caps text-label-caps text-tertiary">今日宝藏</p>
+</div>
+<p class="font-headline-md text-headline-md text-on-surface tracking-tight">被一首歌击中内心</p>
+</div>
+<!-- Card 5 -->
+<div class="break-inside-avoid rounded-[24px] bg-surface-container-lowest/80 backdrop-blur-sm border border-white/50 shadow-[0_10px_30px_-10px_rgba(0,110,43,0.05)] p-6">
+<p class="font-quote-expressive text-quote-expressive text-on-surface-variant mb-4">"再微小的步伐，也是前进。"</p>
+<div class="w-8 h-1 bg-primary/40 rounded-full"></div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] max-w-md rounded-[32px] bg-surface-container-low/90 backdrop-blur-xl shadow-2xl shadow-primary/10 flex justify-around items-center px-2 py-3 z-50 border border-white/20">
+<!-- Inactive -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant w-16 group hover:text-on-surface">
+<div class="px-4 py-1 rounded-full mb-1 group-hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">home</span>
+</div>
+<span class="text-[11px] font-bold">首页</span>
+</button>
+<!-- Inactive -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant w-16 group hover:text-on-surface">
+<div class="px-4 py-1 rounded-full mb-1 group-hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">edit_document</span>
+</div>
+<span class="text-[11px] font-bold">记录</span>
+</button>
+<!-- Inactive -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant w-16 group hover:text-on-surface">
+<div class="px-4 py-1 rounded-full mb-1 group-hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">photo_library</span>
+</div>
+<span class="text-[11px] font-bold">剪影</span>
+</button>
+<!-- Active (Timeline / Echoes) -->
+<button class="flex flex-col items-center justify-center text-on-surface w-16 group">
+<div class="bg-primary-container text-on-primary-container px-4 py-1 rounded-full mb-1 transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">timeline</span>
+</div>
+<span class="text-[11px] font-bold text-on-surface">回顾</span>
+</button>
+</nav>
+</body></html>

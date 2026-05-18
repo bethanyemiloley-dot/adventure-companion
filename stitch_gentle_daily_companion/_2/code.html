@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>快速记录 - 灵动陪伴</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400&amp;family=Nunito+Sans:wght@400;700&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-secondary-fixed": "#001849",
+                "on-primary": "#ffffff",
+                "primary-fixed": "#82fc96",
+                "surface-container-lowest": "#ffffff",
+                "surface-container-highest": "#e5e2de",
+                "tertiary-container": "#caa719",
+                "on-tertiary-fixed-variant": "#564500",
+                "surface-tint": "#006e2b",
+                "on-primary-fixed-variant": "#00531f",
+                "gentle-blush": "#F2E5E5",
+                "on-secondary": "#ffffff",
+                "primary-container": "#47c163",
+                "secondary-fixed": "#dbe1ff",
+                "error-container": "#ffdad6",
+                "secondary-fixed-dim": "#b3c5ff",
+                "on-background": "#1c1c1a",
+                "secondary": "#2a58c0",
+                "on-error-container": "#93000a",
+                "serene-sky": "#E8F1FF",
+                "tertiary-fixed": "#ffe07d",
+                "primary": "#006e2b",
+                "warm-sand": "#F5F1EA",
+                "tertiary": "#725c00",
+                "surface-container-low": "#f6f3ef",
+                "surface-container-high": "#eae8e4",
+                "inverse-on-surface": "#f3f0ec",
+                "surface-container": "#f0ede9",
+                "earth-moss": "#235524",
+                "surface-variant": "#e5e2de",
+                "outline": "#6e7a6c",
+                "on-surface-variant": "#3e4a3d",
+                "tertiary-fixed-dim": "#e8c339",
+                "surface": "#fcf9f5",
+                "inverse-primary": "#66de7c",
+                "on-surface": "#1c1c1a",
+                "primary-fixed-dim": "#66de7c",
+                "on-tertiary-container": "#4c3d00",
+                "error": "#ba1a1a",
+                "background": "#fcf9f5",
+                "surface-dim": "#dcdad6",
+                "on-secondary-container": "#002b76",
+                "inverse-surface": "#31302e",
+                "on-error": "#ffffff",
+                "on-tertiary": "#ffffff",
+                "on-secondary-fixed-variant": "#003fa5",
+                "surface-bright": "#fcf9f5",
+                "secondary-container": "#6c94ff",
+                "on-primary-container": "#004a1b",
+                "outline-variant": "#bdcaba",
+                "on-primary-fixed": "#002108",
+                "soft-clay": "#D9C5B2",
+                "on-tertiary-fixed": "#231b00"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "margin-mobile": "24px",
+                "gutter": "16px",
+                "unit": "8px",
+                "safe-area": "32px"
+        },
+        "fontFamily": {
+                "quote-expressive": [
+                        "Bricolage Grotesque"
+                ],
+                "body-md": [
+                        "Nunito Sans"
+                ],
+                "display-lg": [
+                        "Quicksand"
+                ],
+                "body-lg": [
+                        "Nunito Sans"
+                ],
+                "label-caps": [
+                        "Nunito Sans"
+                ],
+                "headline-md": [
+                        "Quicksand"
+                ]
+        },
+        "fontSize": {
+                "quote-expressive": [
+                        "22px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "display-lg": [
+                        "40px",
+                        {
+                                "lineHeight": "48px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-caps": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-md": [
+                        "28px",
+                        {
+                                "lineHeight": "36px",
+                                "fontWeight": "600"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-warm-sand text-on-surface min-h-screen relative overflow-x-hidden font-body-md antialiased">
+<!-- Atmospheric Background Layer -->
+<div class="fixed inset-0 z-0 pointer-events-none opacity-40 bg-bottom bg-no-repeat bg-contain" data-alt="A highly stylized, very faint background depicting soft, overlapping watercolor mountain silhouettes fading into a warm, creamy sand-colored sky. The mountains are rendered in pale, muted tones of gentle blush and soft clay, creating a serene, atmospheric depth of field. There are no harsh lines, high contrast areas, or rigid geometric shapes, ensuring a calm, organic minimalist aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAgApUtNtrEzpAcmZifpIywbYK0Axt57sAoqrSZqfTFcnCRcz0rY1qY_83oB2u_EV_mHRd21RHSqkJ1IAbLmnNE9gR48IhGHq-OVqO0wNLxLTAYMyH7COKFgL533Wmhr53JRdbtaNtd4VNyDM5kQwQys3doeDXSCeBNYLTjaN9cmyfCOUBTYfrM3qPMswlkZMwEJp8exucMp6tszThkEJmaiiz2-8nIkuAmtDsEe3jm49K46mewNZiHuCemkXw4gpIlY87Kch1S6f4'); filter: blur(2px);"></div>
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full flex justify-between items-center px-margin-mobile pt-safe pb-4 bg-warm-sand/80 backdrop-blur-md z-40">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full overflow-hidden shrink-0 bg-surface-container flex items-center justify-center">
+<img alt="Avatar" class="w-full h-full object-cover mix-blend-multiply opacity-70" data-alt="A delicate, soft charcoal sketch of a sleeping fox curled up into a small ball, rendered on slightly textured paper." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHUVUdk9nl43p54A1ZTjZzBGXIHNW0VxXOVQoe1Odj30mYQbYHCvKe3ZMAoCaSnPssPVyr3LfSzDJKG6okSYpdQeRg4ZcZdbHdTCyCrst7fjGUqOwf0y06GQ0arBbfW1s2LteXoI6hXlkbqvb1TsWxOgv1USjBnSlJk_PTsdA6UqsRC9PBuSYBWYfcY2LVS0_mZMcHDYEaWQGkJbtlJpNSRhxNdiuGTSVqTLrdk6UL_sMsY7PPxFOsdzAsmfZRmN4-t3yYR9OhU5k"/>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">晚上好，漫游者</h1>
+</div>
+<button class="w-12 h-12 flex items-center justify-center shrink-0 hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined text-primary text-2xl">eco</span>
+</button>
+</header>
+<!-- Main Canvas: Quick Input -->
+<main class="pt-[120px] pb-[160px] px-margin-mobile flex flex-col justify-center relative z-10 min-h-screen">
+<!-- Companion Fox Character -->
+<div class="absolute bottom-40 right-4 w-40 h-40 opacity-80 pointer-events-none z-0">
+<img alt="Companion Fox" class="w-full h-full object-contain mix-blend-multiply" data-alt="A central, hand-drawn illustration of a peaceful fox. The artwork embodies a hybrid of organic minimalism and artistic whimsy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE4A0W1U1Yj7xFF9J0P156LAVoGoBR4I8Nt1AXQ4ETYyTwKZl0H4ZMNxtFIxwXJcjDdtJse0cd4B5slYV-yyRiYV9ij6HbSfC7PlcI0RI4O9yl-yhywltcN2KsFBzmaaDjeZHgd6Q77O3RcLnumnBAkw49nHpWxLcAnItd_7hO0ycON6mCdTenLaYV4SZ9RYmniGnq0O8YqHM62tDdI-bnA-m9VGgE5MX0IZbplyncqk7KfxF1ZMR82hoyj3mMz4zwdvthBI-6cDo"/>
+</div>
+<div class="max-w-md w-full mx-auto relative z-10">
+<!-- Chat Bubble / Input Area -->
+<div class="bg-surface-container-lowest/80 backdrop-blur-sm rounded-[32px] p-8 shadow-[0_30px_60px_-15px_rgba(0,110,43,0.08)] relative z-10 mb-8 border border-white/50">
+<label class="block font-quote-expressive text-quote-expressive text-primary mb-6 select-none" for="quick-record">此刻，你想对树洞说点什么？</label>
+<textarea class="w-full bg-transparent border-0 border-b-2 border-outline/20 border-dashed focus:ring-0 focus:border-primary text-body-lg text-on-surface resize-none placeholder:text-outline font-body-lg transition-colors p-0 pb-2" id="quick-record" placeholder="写下你的奇思妙想..." rows="4"></textarea>
+</div>
+<!-- Hand-drawn Quick Tags -->
+<div class="flex flex-wrap gap-3 mb-10 pl-2">
+<button class="px-5 py-2.5 bg-surface-container-high text-on-surface font-label-caps text-label-caps rounded-full border border-outline/10 hover:bg-surface-variant transition-colors shadow-sm">
+                    ✨ 灵光一现
+                </button>
+<button class="px-5 py-2.5 bg-primary-container text-on-primary-container font-label-caps text-label-caps rounded-full border border-primary/10 hover:opacity-90 transition-opacity shadow-sm">
+                    ✅ 终于搞定
+                </button>
+<button class="px-5 py-2.5 bg-surface-container-high text-on-surface font-label-caps text-label-caps rounded-full border border-outline/10 hover:bg-surface-variant transition-colors shadow-sm">
+                    💭 只是发呆
+                </button>
+</div>
+<!-- Submit Action -->
+<div class="flex justify-end pr-2">
+<button class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">send</span>
+</button>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] max-w-md rounded-[32px] bg-surface-container-low/90 backdrop-blur-xl shadow-2xl shadow-primary/10 flex justify-around items-center px-2 py-3 z-50 border border-white/20">
+<!-- Inactive: Home -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant w-16 group hover:text-on-surface">
+<div class="px-4 py-1 rounded-full mb-1 group-hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">home</span>
+</div>
+<span class="text-[11px] font-bold">首页</span>
+</button>
+<!-- Active: Record -->
+<button class="flex flex-col items-center justify-center text-on-surface w-16 group">
+<div class="bg-primary-container text-on-primary-container px-4 py-1 rounded-full mb-1 transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">add</span>
+</div>
+<span class="text-[11px] font-bold text-on-surface">记录</span>
+</button>
+<!-- Inactive -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant w-16 group hover:text-on-surface">
+<div class="px-4 py-1 rounded-full mb-1 group-hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">photo_library</span>
+</div>
+<span class="text-[11px] font-bold">剪影</span>
+</button>
+<!-- Inactive -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant w-16 group hover:text-on-surface">
+<div class="px-4 py-1 rounded-full mb-1 group-hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">history</span>
+</div>
+<span class="text-[11px] font-bold">回顾</span>
+</button>
+</nav>
+</body></html>
