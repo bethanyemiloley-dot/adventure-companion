@@ -177,6 +177,7 @@ export type HabitLog = {
   habitId: string
   date: string
   count: number
+  photoId?: string
   updatedAt: string
 }
 
@@ -204,8 +205,14 @@ export function nextHabitCount(habit: HabitDef, current: number): number {
   return current + 1
 }
 
+export function addPhotoToLog(logId: string, photoId: string) {
+  habitLogsStore.update(logId, { photoId })
+}
+
 export function logHabit(habitId: string) {
-  const habit = HABITS.find((h) => h.id === habitId)
+  const habit = [...DEFAULT_HABITS, ...userHabitsStore.getAll()].find(
+    (h) => h.id === habitId,
+  )
   if (!habit) return
   const existing = getTodayLog(habitId)
   const now = new Date()
