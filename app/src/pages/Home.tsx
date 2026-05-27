@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { foxStateForDate, type FoxState } from '../lib/foxState'
 import TaskList from '../components/TaskList'
 import HabitList from '../components/HabitList'
+import TodayEcho from '../components/TodayEcho'
 
 function useFoxState(): FoxState {
   const [state, setState] = useState(() => foxStateForDate())
@@ -33,6 +34,8 @@ export default function Home() {
       <p className="font-quote text-on-surface-variant mt-6 max-w-xs text-center text-base leading-relaxed">
         {fox.whisper}
       </p>
+
+      <TodayEcho />
 
       <section className="mt-8 w-full">
         <h2 className="font-display text-on-surface text-base font-semibold">
